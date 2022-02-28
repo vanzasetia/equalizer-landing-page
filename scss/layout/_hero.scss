@@ -1,0 +1,118 @@
+@use "../abstracts" as *;
+
+.hero {
+  padding: rem(64) 0;
+}
+
+.hero__title {
+  line-height: 1.2;
+  letter-spacing: -0.01135em;
+  font-size: rem(40);
+}
+
+.hero__sub-section {
+  position: relative;
+  margin-top: rem(166);
+  background: $black url("../svg/bg-pattern-2.svg") top left #{rem(48)}/#{rem(
+      280
+    )} rem(420) no-repeat;
+  padding-top: rem(380);
+}
+
+.hero__sub-section::after {
+  content: "";
+  position: absolute;
+  top: -#{rem(98)};
+  left: 50%;
+  background: url("../images/illustration-app.png") no-repeat center
+    center/cover;
+  width: rem(209);
+  height: rem(430);
+  transform: translateX(-50%);
+}
+
+/**
+ * 1. Hide the black background and
+ *    eventually make it looks similar
+ *    with the design
+ */
+.hero__card {
+  position: relative;
+  top: rem(10); /* 1 */
+  border-radius: 0.6em;
+  background-color: $dark-orange;
+  padding: rem(48) rem(36);
+  color: $white;
+}
+
+.hero__sub-title {
+  font-size: rem(32);
+}
+
+.hero__description--card {
+  font-size: rem(18);
+}
+
+.hero__price {
+  display: flex;
+  align-items: center;
+  font-size: rem(20);
+}
+
+.hero__price--big {
+  margin-right: rem(16);
+  font-size: rem(65);
+  font-weight: 700;
+}
+
+.hero__download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6em;
+  padding: rem(15);
+  width: 100%;
+  text-decoration: none;
+  font-size: rem(18);
+  font-weight: 700;
+
+  @include focus-visible($black);
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: background-color 150ms ease-in-out;
+  }
+}
+
+.hero__download--ios {
+  background-color: $black;
+  color: $white;
+
+  @include on-event {
+    background-color: $cyan;
+  }
+}
+
+.hero__download--android {
+  margin-top: rem(16);
+  background-color: $white;
+  color: $black;
+
+  @include on-event {
+    background-color: $light-orange;
+  }
+}
+
+.hero__download--ios .hero__icon,
+.hero__download--android .hero__icon {
+  margin-right: rem(8);
+}
+
+/**
+ * Little hack to position the iOS icon.
+ * The purpose is to make it looks similar
+ * to the design.
+ */
+.hero__download--ios .hero__icon {
+  position: relative;
+  top: -#{rem(2)};
+}

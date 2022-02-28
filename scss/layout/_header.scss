@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.header {
+  padding-top: rem(40);
+}
+
+.header__home {
+  display: inline-block;
+
+  @include focus-visible($black);
+}

@@ -1,0 +1,857 @@
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted currentColor;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none !important;
+}
+
+/*------------------------------------*\
+  #HTML5-BOILERPLATE
+\*------------------------------------*/
+/* Source: https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css */
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/*
+ * DISCLAIMER!
+ * I had added some changes based on my preference.
+ * This is not the original styling!
+ */
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ */
+::-moz-selection {
+  text-shadow: none;
+}
+
+::selection {
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 0.0625rem;
+  border: 0;
+  border-top: 0.0625rem solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Don't allow horizontal resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    background-attachment: initial !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    animation-duration: 1ms !important;
+    animation-delay: -1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #165fcc;
+  color: #f2f2f2;
+}
+
+::-moz-selection {
+  background-color: #165fcc;
+  color: #f2f2f2;
+}
+
+/**
+ * Screen Reader Class
+ * 
+ * To hide content visually.
+ *
+ * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
+ */
+.sr-only {
+  position: absolute !important;
+  margin: -1px !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+body {
+  background-color: #fcfaf9;
+  background-image: url("../images/bg-main-mobile.png");
+  background-position: top -6.5rem left 9.9375rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header,
+main,
+footer {
+  line-height: 1.6;
+  color: #191826;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+p {
+  font-size: 1em;
+}
+
+noscript {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  border-radius: 1em;
+  background-color: white;
+  padding: 1.25rem;
+  width: 17.5rem;
+  color: #111111;
+  font-size: 1rem;
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  line-height: 1.6;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+/**
+ * Style Broken Images
+ * 
+ * Make it looks good even when the image doesn't load
+ * Source: https://bitsofco.de/styling-broken-images/
+ */
+img::before {
+  content: "We're sorry, the image below is broken.";
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+img::after {
+  content: "(url: " attr(src) ")";
+  display: block;
+  font-size: 0.75rem;
+}
+
+/** 
+ * Avoid overloading a user with 
+ * sound from a video that 
+ * autoplays when the page is loaded.
+ *
+ * Source: https://github.com/AllThingsSmitty/css-protips#hide-autoplay-videos-that-arent-muted
+ */
+video[autoplay]:not([muted]) {
+  display: none;
+}
+
+/**
+ * Set font-size on Form Elements for a 
+ * Better Mobile Experience
+ *
+ * To avoid mobile browsers (iOS Safari,
+ * et al.) from zooming in on HTML form 
+ * elements when a <select> drop-down is
+ * tapped, add font-size to the selector
+ * rule.
+ *
+ * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
+ */
+input[type=text],
+input[type=number],
+select,
+textarea {
+  font-size: 1rem;
+}
+
+/** 
+ * Using currentColor to inherit the 
+ * color value 
+ */
+svg path {
+  fill: currentColor;
+}
+
+/** 
+ * Set "display: none" on Line Breaks 
+ * Used as Spacing 
+ */
+br + br {
+  display: none;
+}
+
+.skip-content {
+  display: inline-block;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  z-index: 200;
+  background-color: #fcfaf9;
+  padding: 1em 2em;
+  text-decoration: 0.1em solid;
+  color: #191826;
+  font-size: 1.25rem;
+  font-weight: 700;
+  transform: translateX(-200%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skip-content {
+    transition: transform 0.3s ease 0s;
+  }
+}
+.skip-content:focus,
+.skip-content:focus-visible {
+  outline: 0.2em dashed #191826;
+  outline-offset: 0.25em;
+  transform: translate(0);
+}
+
+.open-new-tab-link {
+  position: relative;
+}
+
+.open-new-tab-link__message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border-radius: 2em;
+  background-color: #111111;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .open-new-tab-link__message {
+    transition: opacity 300ms ease-in-out;
+  }
+}
+.open-new-tab-link:hover .open-new-tab-link__message,
+.open-new-tab-link:active .open-new-tab-link__message,
+.open-new-tab-link:focus .open-new-tab-link__message {
+  display: block;
+  top: -1.75em;
+  left: 1em;
+  opacity: 1;
+  -webkit-clip-path: none;
+  clip-path: none;
+  width: 12em;
+  height: auto;
+}
+
+.hidden {
+  visibility: hidden;
+  width: 0.0625rem;
+  height: 0;
+}
+
+.container__mobile {
+  padding: 0 1.5rem;
+}
+
+.header {
+  padding-top: 2.5rem;
+}
+
+.header__home {
+  display: inline-block;
+}
+.header__home:focus-visible, .header__home:focus {
+  outline: 0.1875rem dotted #191826;
+  outline-offset: 0.3125rem;
+}
+
+.hero {
+  padding: 4rem 0;
+}
+
+.hero__title {
+  line-height: 1.2;
+  letter-spacing: -0.01135em;
+  font-size: 2.5rem;
+}
+
+.hero__sub-section {
+  position: relative;
+  margin-top: 10.375rem;
+  background: #191826 url("../svg/bg-pattern-2.svg") top left 3rem/17.5rem 26.25rem no-repeat;
+  padding-top: 23.75rem;
+}
+
+.hero__sub-section::after {
+  content: "";
+  position: absolute;
+  top: -6.125rem;
+  left: 50%;
+  background: url("../images/illustration-app.png") no-repeat center center/cover;
+  width: 13.0625rem;
+  height: 26.875rem;
+  transform: translateX(-50%);
+}
+
+/**
+ * 1. Hide the black background and
+ *    eventually make it looks similar
+ *    with the design
+ */
+.hero__card {
+  position: relative;
+  top: 0.625rem;
+  /* 1 */
+  border-radius: 0.6em;
+  background-color: #fa7453;
+  padding: 3rem 2.25rem;
+  color: #fcfaf9;
+}
+
+.hero__sub-title {
+  font-size: 2rem;
+}
+
+.hero__description--card {
+  font-size: 1.125rem;
+}
+
+.hero__price {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.hero__price--big {
+  margin-right: 1rem;
+  font-size: 4.0625rem;
+  font-weight: 700;
+}
+
+.hero__download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6em;
+  padding: 0.9375rem;
+  width: 100%;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.hero__download:focus-visible, .hero__download:focus {
+  outline: 0.1875rem dotted #191826;
+  outline-offset: 0.3125rem;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  .hero__download {
+    transition: background-color 150ms ease-in-out;
+  }
+}
+
+.hero__download--ios {
+  background-color: #191826;
+  color: #fcfaf9;
+}
+.hero__download--ios:hover, .hero__download--ios:active {
+  background-color: #66e2dc;
+}
+
+.hero__download--android {
+  margin-top: 1rem;
+  background-color: #fcfaf9;
+  color: #191826;
+}
+.hero__download--android:hover, .hero__download--android:active {
+  background-color: #ffb964;
+}
+
+.hero__download--ios .hero__icon,
+.hero__download--android .hero__icon {
+  margin-right: 0.5rem;
+}
+
+/**
+ * Little hack to position the iOS icon.
+ * The purpose is to make it looks similar
+ * to the design.
+ */
+.hero__download--ios .hero__icon {
+  position: relative;
+  top: -0.125rem;
+}
+
+.footer {
+  margin: 4.625rem 0;
+}
+
+.footer__home {
+  display: inline-block;
+}
+.footer__home:focus-visible, .footer__home:focus {
+  outline: 0.1875rem dotted #191826;
+  outline-offset: 0.3125rem;
+}
+
+.footer__text {
+  margin-top: 2rem;
+}
+
+.footer__email {
+  text-decoration: none;
+  color: #191826;
+  font-weight: 700;
+}
+.footer__email:focus-visible, .footer__email:focus {
+  outline: 0.1875rem dotted #191826;
+  outline-offset: 0.3125rem;
+}
+.footer__email:hover, .footer__email:active {
+  color: #fa7453;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  .footer__email {
+    transition: color 150ms ease-in-out;
+  }
+}
+
+.footer__contact {
+  display: block;
+}
+
+.footer__list {
+  display: flex;
+  align-self: center;
+  margin-top: 4rem;
+}
+@supports (gap: 1.25rem) {
+  .footer__list {
+    gap: 1.25rem;
+  }
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 1.25rem;
+}
+@supports (gap: 1.25rem) {
+  .footer__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.footer__social {
+  color: #191826;
+}
+.footer__social:focus-visible, .footer__social:focus {
+  outline: 0.1875rem dotted #191826;
+  outline-offset: 0.3125rem;
+}
+.footer__social:hover, .footer__social:active {
+  color: #fa7453;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  .footer__social {
+    transition: color 150ms ease-in-out;
+  }
+}
