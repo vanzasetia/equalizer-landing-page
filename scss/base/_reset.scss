@@ -59,9 +59,22 @@ html {
 body {
   background-color: $white;
   background-image: url("../images/bg-main-mobile.png");
-  background-position: top -#{rem(104)} left rem(159);
+  background-position: top left;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: initial;
+
+  @include breakpoint-up("very-small") {
+    background-image: url("../svg/bg-pattern-1.svg"),
+      url("../images/bg-main-tablet.png");
+    background-position: top right, top left;
+    background-size: rem(266) rem(400), initial;
+  }
+
+  @include breakpoint-up("large") {
+    background-image: url("../images/bg-main-desktop.png");
+    background-position: top -#{rem(300)} left -#{rem(300)};
+    background-size: initial;
+  }
 }
 
 header,

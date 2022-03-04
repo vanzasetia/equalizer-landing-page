@@ -3,6 +3,30 @@ $-gap-between-social-media-icons: rem(20);
 
 .footer {
   margin: rem(74) 0;
+
+  @include breakpoint-up("very-small") {
+    margin: rem(180) 0 rem(85) 0;
+  }
+
+  @include breakpoint-up("medium") {
+    margin: rem(202) 0 rem(90) 0;
+  }
+}
+
+.footer__container {
+  @include breakpoint-up("very-small") {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__flex {
+  @include breakpoint-up("small") {
+    display: flex;
+    flex-basis: rem(650);
+    justify-content: space-between;
+  }
 }
 
 .footer__home {
@@ -13,6 +37,14 @@ $-gap-between-social-media-icons: rem(20);
 
 .footer__text {
   margin-top: rem(32);
+
+  @include breakpoint-up("very-small") {
+    max-width: rem(370);
+  }
+
+  @include breakpoint-up("small") {
+    margin-top: 0;
+  }
 }
 
 .footer__email {
@@ -39,6 +71,10 @@ $-gap-between-social-media-icons: rem(20);
   display: flex;
   align-self: center;
   margin-top: rem(64);
+
+  @include breakpoint-up("very-small") {
+    margin-top: 0;
+  }
 
   @supports (gap: $-gap-between-social-media-icons) {
     gap: $-gap-between-social-media-icons;

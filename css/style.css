@@ -8,6 +8,7 @@
 html {
   line-height: 1.15;
   /* 1 */
+
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
@@ -33,8 +34,8 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
+  font-size: 2em;
 }
 
 /* Grouping content
@@ -119,10 +120,10 @@ small {
  */
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
   position: relative;
   vertical-align: baseline;
+  line-height: 0;
+  font-size: 75%;
 }
 
 sub {
@@ -153,13 +154,13 @@ input,
 optgroup,
 select,
 textarea {
+  /* 1 */
+  margin: 0;
+  /* 1 */
+  line-height: 1.15;
   font-family: inherit;
   /* 1 */
   font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
   /* 2 */
 }
 
@@ -187,9 +188,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -197,9 +198,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -208,9 +209,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted currentColor;
 }
 
@@ -229,16 +230,16 @@ fieldset {
  */
 legend {
   box-sizing: border-box;
-  /* 1 */
-  color: inherit;
   /* 2 */
   display: table;
   /* 1 */
-  max-width: 100%;
-  /* 1 */
   padding: 0;
+  /* 1 */
+  max-width: 100%;
   /* 3 */
   white-space: normal;
+  /* 1 */
+  color: inherit;
   /* 1 */
 }
 
@@ -260,8 +261,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -271,8 +272,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -280,17 +281,18 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
-  -webkit-appearance: textfield;
+[type="search"] {
   /* 1 */
   outline-offset: -2px;
+
+  -webkit-appearance: textfield;
   /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -299,9 +301,10 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
   /* 1 */
   font: inherit;
+
+  -webkit-appearance: button;
   /* 2 */
 }
 
@@ -373,11 +376,11 @@ template {
  */
 hr {
   display: block;
-  height: 0.0625rem;
-  border: 0;
-  border-top: 0.0625rem solid #cccccc;
   margin: 1em 0;
+  border: 0;
+  border-top: 0.0625rem solid #ccc;
   padding: 0;
+  height: 0.0625rem;
 }
 
 /*
@@ -398,8 +401,8 @@ video {
  * Remove default fieldset styles.
  */
 fieldset {
-  border: 0;
   margin: 0;
+  border: 0;
   padding: 0;
 }
 
@@ -412,8 +415,8 @@ textarea {
 
 @media (prefers-reduced-motion: reduce) {
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     background-attachment: initial !important;
     transition-delay: 0s !important;
     transition-duration: 0s !important;
@@ -468,9 +471,24 @@ html {
 body {
   background-color: #fcfaf9;
   background-image: url("../images/bg-main-mobile.png");
-  background-position: top -6.5rem left 9.9375rem;
+  background-position: top left;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: initial;
+}
+@media screen and (min-width: 46.875em) {
+  body {
+    background-image: url("../svg/bg-pattern-1.svg"),
+      url("../images/bg-main-tablet.png");
+    background-position: top right, top left;
+    background-size: 16.625rem 25rem, initial;
+  }
+}
+@media screen and (min-width: 90em) {
+  body {
+    background-image: url("../images/bg-main-desktop.png");
+    background-position: top -18.75rem left -18.75rem;
+    background-size: initial;
+  }
 }
 
 header,
@@ -495,7 +513,7 @@ noscript {
   background-color: white;
   padding: 1.25rem;
   width: 17.5rem;
-  color: #111111;
+  color: #111;
   font-size: 1rem;
   transform: translate(-50%, -50%);
 }
@@ -555,8 +573,8 @@ video[autoplay]:not([muted]) {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
  */
-input[type=text],
-input[type=number],
+input[type="text"],
+input[type="number"],
 select,
 textarea {
   font-size: 1rem;
@@ -617,7 +635,7 @@ br + br {
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   border-radius: 2em;
-  background-color: #111111;
+  background-color: #111;
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -650,18 +668,57 @@ br + br {
   height: 0;
 }
 
+@media screen and (min-width: 46.875em) {
+  .container {
+    padding: 0 2.0625rem;
+  }
+}
+@media screen and (min-width: 63.75em) {
+  .container {
+    margin: 0 auto;
+    max-width: 69.375rem;
+  }
+}
+@media screen and (min-width: 90em) {
+  .container {
+    position: relative;
+  }
+  .container::after {
+    content: "";
+    position: absolute;
+    top: -2.5rem;
+    right: -12.5rem;
+    background: url("../svg/bg-pattern-1.svg") no-repeat center
+      center/cover;
+    width: 19.5rem;
+    height: 29.25rem;
+  }
+}
+
 .container__mobile {
   padding: 0 1.5rem;
+  max-width: 31.25rem;
+}
+@media screen and (min-width: 46.875em) {
+  .container__mobile {
+    max-width: 100%;
+  }
 }
 
 .header {
   padding-top: 2.5rem;
 }
+@media screen and (min-width: 46.875em) {
+  .header {
+    padding-top: 3.75rem;
+  }
+}
 
 .header__home {
   display: inline-block;
 }
-.header__home:focus-visible, .header__home:focus {
+.header__home:focus-visible,
+.header__home:focus {
   outline: 0.1875rem dotted #191826;
   outline-offset: 0.3125rem;
 }
@@ -669,18 +726,82 @@ br + br {
 .hero {
   padding: 4rem 0;
 }
+@media screen and (min-width: 46.875em) {
+  .hero {
+    padding: 5.625rem 0;
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 63.75em) {
+  .hero {
+    padding: 7.9375rem 0 0 0;
+    font-size: 1.25rem;
+  }
+}
 
 .hero__title {
+  margin-top: 0;
   line-height: 1.2;
   letter-spacing: -0.01135em;
   font-size: 2.5rem;
+}
+@media screen and (min-width: 46.875em) {
+  .hero__title {
+    max-width: 32.5rem;
+    line-height: 1;
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 63.75em) {
+  .hero__title {
+    max-width: 51.5625rem;
+    font-size: 5.5rem;
+  }
+}
+@media screen and (min-width: 69.375em) {
+  .hero__title {
+    margin-bottom: 2.5rem;
+    max-width: 63.4375rem;
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  .hero__description {
+    max-width: 32.5rem;
+  }
+}
+@media screen and (min-width: 46.875em) {
+  .hero__description {
+    max-width: 51.5625rem;
+  }
 }
 
 .hero__sub-section {
   position: relative;
   margin-top: 10.375rem;
-  background: #191826 url("../svg/bg-pattern-2.svg") top left 3rem/17.5rem 26.25rem no-repeat;
+  background: #191826 url("../svg/bg-pattern-2.svg") top left 3rem/17.5rem
+    26.25rem no-repeat;
   padding-top: 23.75rem;
+}
+@media screen and (min-width: 31.25em) {
+  .hero__sub-section {
+    margin: 15.625rem auto 0 auto;
+    border-radius: 0.6em;
+    background-position: top center;
+    padding: 0;
+    height: 37.5rem;
+  }
+}
+@media screen and (min-width: 63.75em) {
+  .hero__sub-section {
+    margin-top: 21.25rem;
+    background-position: top -2.5rem left 21rem;
+  }
+}
+@media screen and (min-width: 69.375em) {
+  .hero__sub-section {
+    margin: 20.0625rem 0 0 0;
+  }
 }
 
 .hero__sub-section::after {
@@ -688,10 +809,32 @@ br + br {
   position: absolute;
   top: -6.125rem;
   left: 50%;
-  background: url("../images/illustration-app.png") no-repeat center center/cover;
+  background: url("../images/illustration-app.png") no-repeat center
+    center/cover;
   width: 13.0625rem;
   height: 26.875rem;
   transform: translateX(-50%);
+}
+@media screen and (min-width: 31.25em) {
+  .hero__sub-section::after {
+    top: -8.625rem;
+    left: 4rem;
+    transform: translate(0);
+  }
+}
+@media screen and (min-width: 46.875em) {
+  .hero__sub-section::after {
+    width: 16.875rem;
+    height: 34.75rem;
+  }
+}
+@media screen and (min-width: 63.75em) {
+  .hero__sub-section::after {
+    top: -13.3125rem;
+    left: 6.375rem;
+    width: 19.5rem;
+    height: 40.125rem;
+  }
 }
 
 /**
@@ -702,25 +845,53 @@ br + br {
 .hero__card {
   position: relative;
   top: 0.625rem;
+  margin: 0 auto;
   /* 1 */
   border-radius: 0.6em;
   background-color: #fa7453;
   padding: 3rem 2.25rem;
   color: #fcfaf9;
 }
+@media screen and (min-width: 31.25em) {
+  .hero__card {
+    position: absolute;
+    top: 9.375rem;
+    right: 3.625rem;
+    z-index: 2;
+    max-width: 25rem;
+  }
+}
+@media screen and (min-width: 63.75em) {
+  .hero__card {
+    padding: 3rem 3.375rem;
+    max-width: 28.125rem;
+  }
+}
+@media screen and (min-width: 69.375em) {
+  .hero__card {
+    top: 6.875rem;
+  }
+}
 
 .hero__sub-title {
   font-size: 2rem;
 }
-
-.hero__description--card {
-  font-size: 1.125rem;
+@media screen and (min-width: 63.75em) {
+  .hero__sub-title {
+    margin-bottom: 1.375rem;
+    font-size: 2.5rem;
+  }
 }
 
 .hero__price {
   display: flex;
   align-items: center;
   font-size: 1.25rem;
+}
+@media screen and (min-width: 31.25em) {
+  .hero__price {
+    margin: 2.5rem 0;
+  }
 }
 
 .hero__price--big {
@@ -740,7 +911,8 @@ br + br {
   font-size: 1.125rem;
   font-weight: 700;
 }
-.hero__download:focus-visible, .hero__download:focus {
+.hero__download:focus-visible,
+.hero__download:focus {
   outline: 0.1875rem dotted #191826;
   outline-offset: 0.3125rem;
 }
@@ -754,7 +926,8 @@ br + br {
   background-color: #191826;
   color: #fcfaf9;
 }
-.hero__download--ios:hover, .hero__download--ios:active {
+.hero__download--ios:hover,
+.hero__download--ios:active {
   background-color: #66e2dc;
 }
 
@@ -763,7 +936,8 @@ br + br {
   background-color: #fcfaf9;
   color: #191826;
 }
-.hero__download--android:hover, .hero__download--android:active {
+.hero__download--android:hover,
+.hero__download--android:active {
   background-color: #ffb964;
 }
 
@@ -785,11 +959,38 @@ br + br {
 .footer {
   margin: 4.625rem 0;
 }
+@media screen and (min-width: 46.875em) {
+  .footer {
+    margin: 11.25rem 0 5.3125rem 0;
+  }
+}
+@media screen and (min-width: 69.375em) {
+  .footer {
+    margin: 12.625rem 0 5.625rem 0;
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 63.75em) {
+  .footer__flex {
+    display: flex;
+    flex-basis: 40.625rem;
+    justify-content: space-between;
+  }
+}
 
 .footer__home {
   display: inline-block;
 }
-.footer__home:focus-visible, .footer__home:focus {
+.footer__home:focus-visible,
+.footer__home:focus {
   outline: 0.1875rem dotted #191826;
   outline-offset: 0.3125rem;
 }
@@ -797,17 +998,29 @@ br + br {
 .footer__text {
   margin-top: 2rem;
 }
+@media screen and (min-width: 46.875em) {
+  .footer__text {
+    max-width: 23.125rem;
+  }
+}
+@media screen and (min-width: 63.75em) {
+  .footer__text {
+    margin-top: 0;
+  }
+}
 
 .footer__email {
   text-decoration: none;
   color: #191826;
   font-weight: 700;
 }
-.footer__email:focus-visible, .footer__email:focus {
+.footer__email:focus-visible,
+.footer__email:focus {
   outline: 0.1875rem dotted #191826;
   outline-offset: 0.3125rem;
 }
-.footer__email:hover, .footer__email:active {
+.footer__email:hover,
+.footer__email:active {
   color: #fa7453;
 }
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -824,6 +1037,11 @@ br + br {
   display: flex;
   align-self: center;
   margin-top: 4rem;
+}
+@media screen and (min-width: 46.875em) {
+  .footer__list {
+    margin-top: 0;
+  }
 }
 @supports (gap: 1.25rem) {
   .footer__list {
@@ -843,11 +1061,13 @@ br + br {
 .footer__social {
   color: #191826;
 }
-.footer__social:focus-visible, .footer__social:focus {
+.footer__social:focus-visible,
+.footer__social:focus {
   outline: 0.1875rem dotted #191826;
   outline-offset: 0.3125rem;
 }
-.footer__social:hover, .footer__social:active {
+.footer__social:hover,
+.footer__social:active {
   color: #fa7453;
 }
 @media screen and (prefers-reduced-motion: no-preference) {
