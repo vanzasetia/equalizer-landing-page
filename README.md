@@ -45,7 +45,7 @@ My users should be able to:
 
 ### Links
 - [Live Review](https://officialequalizer.netlify.app/)
-- [Frontend Mentor Solution Page]()
+- [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/equalizer-landing-page-html-css-sass-0JTUm8wvt)
 
 ## My Process
 [(Back to top)](#table-of-contents)
