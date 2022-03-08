@@ -750,7 +750,7 @@ br + br {
 @media screen and (min-width: 80em) {
   .hero {
     font-size: 1.25rem;
-    padding-top: 7.9375rem;
+    padding-top: 2.5rem;
   }
 }
 
