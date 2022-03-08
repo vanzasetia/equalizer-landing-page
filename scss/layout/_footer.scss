@@ -2,14 +2,14 @@
 $-gap-between-social-media-icons: rem(20);
 
 .footer {
-  margin: rem(74) 0;
+  padding: rem(74) 0;
 
   @include breakpoint-up("very-small") {
-    margin: rem(183) 0 rem(85) 0;
+    padding: rem(183) 0 rem(85) 0;
   }
 
   @include breakpoint-up("small") {
-    margin: rem(220) 0 rem(91) 0;
+    padding: rem(220) 0 rem(91) 0;
   }
 }
 

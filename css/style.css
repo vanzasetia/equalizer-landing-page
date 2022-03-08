@@ -964,16 +964,16 @@ br + br {
 }
 
 .footer {
-  margin: 4.625rem 0;
+  padding: 4.625rem 0;
 }
 @media screen and (min-width: 37.5em) {
   .footer {
-    margin: 11.4375rem 0 5.3125rem 0;
+    padding: 11.4375rem 0 5.3125rem 0;
   }
 }
 @media screen and (min-width: 80em) {
   .footer {
-    margin: 13.75rem 0 5.6875rem 0;
+    padding: 13.75rem 0 5.6875rem 0;
   }
 }
 
