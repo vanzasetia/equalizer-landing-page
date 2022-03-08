@@ -486,7 +486,7 @@ body {
 @media screen and (min-width: 80em) {
   body {
     background-image: url("../images/bg-main-desktop.png");
-    background-position: top -12.5rem left -25rem;
+    background-position: top -15rem left -20rem;
     background-size: initial;
     overflow-x: hidden;
     /* 1 */

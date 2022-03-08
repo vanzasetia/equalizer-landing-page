@@ -75,7 +75,7 @@ body {
 
   @include breakpoint-up("small") {
     background-image: url("../images/bg-main-desktop.png");
-    background-position: top -#{rem(200)} left -#{rem(400)};
+    background-position: top -#{rem(240)} left -#{rem(320)};
     background-size: initial;
     overflow-x: hidden; /* 1 */
   }
