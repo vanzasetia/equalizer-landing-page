@@ -56,12 +56,29 @@ html {
   white-space: nowrap !important;
 }
 
+/**
+ * 1. Hide the overflow that caused
+ *    by the .container element (svg-pattern-1.svg)
+ */
 body {
   background-color: $white;
   background-image: url("../images/bg-main-mobile.png");
   background-position: top -#{rem(104)} left rem(159);
   background-repeat: no-repeat;
   background-size: 100%;
+
+  @include breakpoint-up("very-small") {
+    background-image: url("../images/bg-main-tablet.png");
+    background-position: top -#{rem(400)} left -#{rem(500)};
+    background-size: 200%;
+  }
+
+  @include breakpoint-up("small") {
+    background-image: url("../images/bg-main-desktop.png");
+    background-position: top -#{rem(200)} left -#{rem(400)};
+    background-size: initial;
+    overflow-x: hidden; /* 1 */
+  }
 }
 
 header,

@@ -1,13 +1,48 @@
 @use "../abstracts" as *;
 
 .hero {
-  padding: rem(64) 0;
+  padding-top: rem(64);
+
+  @include breakpoint-up("very-small") {
+    font-size: rem(18);
+    padding-top: rem(95);
+  }
+
+  @include breakpoint-up("small") {
+    font-size: rem(20);
+    padding-top: rem(127);
+  }
+}
+
+.hero__text-container {
+  @include breakpoint-up("very-small") {
+    max-width: rem(520);
+  }
+
+  @include breakpoint-up("small") {
+    max-width: rem(1015);
+  }
 }
 
 .hero__title {
   line-height: 1.2;
   letter-spacing: -0.01135em;
   font-size: rem(40);
+
+  @include breakpoint-up("very-small") {
+    font-size: rem(64);
+    line-height: 1;
+  }
+
+  @include breakpoint-up("small") {
+    font-size: rem(88);
+  }
+}
+
+.hero__description {
+  @include breakpoint-up("small") {
+    max-width: rem(825);
+  }
 }
 
 .hero__sub-section {
@@ -17,6 +52,22 @@
       280
     )} rem(420) no-repeat;
   padding-top: rem(380);
+
+  @include breakpoint-up("tiny") {
+    border-radius: 0.75em;
+  }
+
+  @include breakpoint-up("very-small") {
+    padding-top: 0;
+    margin-top: rem(250);
+    background-position: top center;
+    height: rem(600);
+  }
+
+  @include breakpoint-up("small") {
+    margin-top: rem(321);
+    background-position: top -#{rem(40)} left rem(336);
+  }
 }
 
 .hero__sub-section::after {
@@ -29,6 +80,21 @@
   width: rem(209);
   height: rem(430);
   transform: translateX(-50%);
+
+  @include breakpoint-up("very-small") {
+    top: -#{rem(138)};
+    left: rem(64);
+    transform: translate(0);
+    width: rem(270);
+    height: rem(556);
+  }
+
+  @include breakpoint-up("small") {
+    top: -#{rem(213)};
+    left: rem(102);
+    width: rem(312);
+    height: rem(642);
+  }
 }
 
 /**
@@ -43,20 +109,48 @@
   background-color: $dark-orange;
   padding: rem(48) rem(36);
   color: $white;
+
+  @include breakpoint-up("very-small") {
+    position: absolute;
+    top: rem(150);
+    right: rem(58);
+    z-index: 2;
+    max-width: rem(400);
+  }
+
+  @include breakpoint-up("small") {
+    max-width: rem(446);
+    top: rem(90);
+    right: rem(95);
+    padding: rem(58) rem(59) rem(48) rem(54);
+  }
 }
 
 .hero__sub-title {
   font-size: rem(32);
+
+  @include breakpoint-up("small") {
+    font-size: rem(40);
+    margin-bottom: rem(22);
+  }
 }
 
 .hero__description--card {
   font-size: rem(18);
+
+  @include breakpoint-up("small") {
+    font-size: rem(20);
+  }
 }
 
 .hero__price {
   display: flex;
   align-items: center;
   font-size: rem(20);
+
+  @include breakpoint-up("small") {
+    margin: rem(39) 0 rem(46);
+  }
 }
 
 .hero__price--big {

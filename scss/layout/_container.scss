@@ -2,4 +2,50 @@
 
 .container__mobile {
   padding: 0 rem(24);
+
+  @include breakpoint-up("tiny") {
+    padding: 0;
+  }
+}
+
+/**
+ * 1. Make the bg-pattern-1 at the top right
+ *    of the screen on 1440px, for the sake of
+ *    similarity.
+ */
+.container {
+  @include breakpoint-up("tiny") {
+    max-width: rem(500);
+    margin: 0 auto;
+    padding: 0 rem(40);
+  }
+
+  @include breakpoint-up("very-small") {
+    position: relative;
+    max-width: rem(925);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -#{rem(32)};
+      right: 0;
+      background: url("../svg/bg-pattern-1.svg") center center/cover
+        no-repeat;
+      width: rem(267);
+      height: rem(400);
+      z-index: -1;
+    }
+  }
+
+  @include breakpoint-up("small") {
+    max-width: rem(1110);
+    padding: 0;
+
+    &::after {
+      top: -#{rem(40)};
+      right: -#{rem(165)}; /* 1 */
+      width: rem(312);
+      height: rem(468);
+    }
+  }
 }

@@ -3,16 +3,47 @@ $-gap-between-social-media-icons: rem(20);
 
 .footer {
   margin: rem(74) 0;
+
+  @include breakpoint-up("very-small") {
+    margin: rem(183) 0 rem(85) 0;
+  }
+
+  @include breakpoint-up("small") {
+    margin: rem(300) 0 rem(91) 0;
+  }
+}
+
+.footer__container {
+  @include breakpoint-up("small") {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .footer__home {
   display: inline-block;
+  margin-bottom: rem(32);
 
   @include focus-visible($black);
+
+  @include breakpoint-up("small") {
+    margin-bottom: 0;
+  }
+}
+
+.footer__flex {
+  @include breakpoint-up("very-small") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer__text {
-  margin-top: rem(32);
+  @include breakpoint-up("very-small") {
+    flex-basis: rem(366);
+  }
 }
 
 .footer__email {
@@ -39,6 +70,10 @@ $-gap-between-social-media-icons: rem(20);
   display: flex;
   align-self: center;
   margin-top: rem(64);
+
+  @include breakpoint-up("very-small") {
+    margin-top: 0;
+  }
 
   @supports (gap: $-gap-between-social-media-icons) {
     gap: $-gap-between-social-media-icons;
