@@ -1,36 +1,5 @@
 @use "../abstracts" as *;
 
-.container {
-  @include breakpoint-up("very-small") {
-    padding: 0 rem(33);
-  }
-
-  @include breakpoint-up("small") {
-    margin: 0 auto;
-    max-width: rem(1110);
-  }
-
-  @include breakpoint-up("large") {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -#{rem(40)};
-      right: -#{rem(200)};
-      background: url("../svg/bg-pattern-1.svg") no-repeat center
-        center/cover;
-      width: rem(312);
-      height: rem(468);
-    }
-  }
-}
-
 .container__mobile {
   padding: 0 rem(24);
-  max-width: rem(500);
-
-  @include breakpoint-up("very-small") {
-    max-width: 100%;
-  }
 }

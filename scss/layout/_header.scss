@@ -2,10 +2,6 @@
 
 .header {
   padding-top: rem(40);
-
-  @include breakpoint-up("very-small") {
-    padding-top: rem(60);
-  }
 }
 
 .header__home {
