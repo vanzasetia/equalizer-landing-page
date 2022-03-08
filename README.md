@@ -1,20 +1,12 @@
-![banner](./images/banner.png)
+![banner](./images/banner.jpg)
 
 <p align="left">
   <a href="https://www.frontendmentor.io/challenges?difficulties=1" target="_blank"><img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty"></a>
   <img alt="Repo size" src="https://img.shields.io/github/repo-size/vanzasetia/equalizer-landing-page?style=for-the-badge&logo=github">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
   <img alt="Last commit" src="https://img.shields.io/github/last-commit/vanzasetia/equalizer-landing-page?style=for-the-badge&logo=git">
-  <img alt="Netlify" src="https://img.shields.io/netlify/?style=for-the-badge&logo=netlify">
+  <img alt="Netlify" src="https://img.shields.io/netlify/062391a0-6867-404a-ba7d-197497353a0e?style=for-the-badge&logo=netlify">
   <img alt="License" src="https://img.shields.io/github/license/vanzasetia/equalizer-landing-page?color=green&style=for-the-badge&logo=github">
-</p>
-
-<p>
-  <a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-    </a>
 </p>
 
 # Equalizer Landing Page
@@ -24,11 +16,8 @@
   - [Introduction](#introduction)
   - [The challenge](#the-challenge)
   - [Links](#links)
-  - [Screenshots](#screenshots)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [License](#license)
 - [References](#references)
@@ -56,10 +45,6 @@ My users should be able to:
 - [Live Review](https://officialequalizer.netlify.app/)
 - [Frontend Mentor Solution Page]()
 
-### Screenshots
-
-![Desktop](./screenshots/desktop.jpg)
-
 ## My Process
 [(Back to top)](#table-of-contents)
 
@@ -71,12 +56,9 @@ My users should be able to:
 - CSS Flexbox
 - Mobile-first workflow
 - [Normalize.css](https://necolas.github.io/normalize.css/)
+- Netlify - site hosting and [asset optimization](https://www.netlify.com/blog/2019/08/05/control-your-asset-optimization-settings-from-netlify.toml/)
 
 > \* I follow guidelines. [See what guidelines that I follow.](./docs/README.md#guidelines)
-
-### What I Learned
-
-### Useful Resources
 
 ## Author
 [(Back to top)](#table-of-contents)
