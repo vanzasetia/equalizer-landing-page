@@ -900,7 +900,7 @@ br + br {
 }
 @media screen and (min-width: 80em) {
   .hero__price {
-    margin: 2.4375rem 0 2.875rem;
+    margin: 2.4375rem 0;
   }
 }
 

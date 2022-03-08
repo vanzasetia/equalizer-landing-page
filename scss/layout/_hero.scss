@@ -149,7 +149,7 @@
   font-size: rem(20);
 
   @include breakpoint-up("small") {
-    margin: rem(39) 0 rem(46);
+    margin: rem(39) 0;
   }
 }
 
