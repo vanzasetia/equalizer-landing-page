@@ -40,7 +40,7 @@ These are the guidelines that I follow when I write the code.
 - [Favicon Generator](https://realfavicongenerator.net/)
 - [font-face generator](https://everythingfonts.com/font-face) - convert `ttf` to `woff` and `woff2`
 - [Canva](https://canva.com) - design the banner and the social media card image for the site.
-- [Netlify] - [optimize assets](https://www.netlify.com/blog/2019/08/05/control-your-asset-optimization-settings-from-netlify.toml/)
+- [Netlify](https://www.netlify.com/) - [optimize assets](https://www.netlify.com/blog/2019/08/05/control-your-asset-optimization-settings-from-netlify.toml/)
 
 ### Validations
 - [SEOptimer](https://www.seoptimer.com/)
