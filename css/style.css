@@ -973,7 +973,7 @@ br + br {
 }
 @media screen and (min-width: 80em) {
   .footer {
-    margin: 18.75rem 0 5.6875rem 0;
+    margin: 13.75rem 0 5.6875rem 0;
   }
 }
 
