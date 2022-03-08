@@ -631,7 +631,7 @@ br + br {
 
 .open-new-tab-link__message {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   opacity: 0;
   -webkit-clip-path: inset(50%);
@@ -655,7 +655,7 @@ br + br {
 .open-new-tab-link:active .open-new-tab-link__message,
 .open-new-tab-link:focus .open-new-tab-link__message {
   display: block;
-  top: -1.75em;
+  bottom: -1.75em;
   left: 1em;
   opacity: 1;
   -webkit-clip-path: none;
@@ -1072,6 +1072,29 @@ br + br {
 }
 @media screen and (prefers-reduced-motion: no-preference) {
   .footer__social {
+    transition: color 150ms ease-in-out;
+  }
+}
+
+.attribution {
+  margin-top: 6.25rem;
+  text-align: center;
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: #191826;
+  font-weight: 700;
+}
+.attribution__link:focus-visible, .attribution__link:focus {
+  outline: 0.1875rem dotted #191826;
+  outline-offset: 0.3125rem;
+}
+.attribution__link:hover, .attribution__link:active {
+  color: #fa7453;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  .attribution__link {
     transition: color 150ms ease-in-out;
   }
 }

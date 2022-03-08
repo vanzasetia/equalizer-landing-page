@@ -101,3 +101,23 @@ $-gap-between-social-media-icons: rem(20);
     transition: color 150ms ease-in-out;
   }
 }
+
+.attribution {
+  margin-top: rem(100);
+  text-align: center;
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: $black;
+  font-weight: 700;
+  @include focus-visible($black);
+
+  @include on-event {
+    color: $dark-orange;
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: color 150ms ease-in-out;
+  }
+}

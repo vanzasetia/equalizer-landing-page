@@ -220,7 +220,7 @@ br + br {
 
 .open-new-tab-link__message {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   opacity: 0;
   -webkit-clip-path: inset(50%);
@@ -245,7 +245,7 @@ br + br {
 .open-new-tab-link:active .open-new-tab-link__message,
 .open-new-tab-link:focus .open-new-tab-link__message {
   display: block;
-  top: -1.75em;
+  bottom: -1.75em;
   left: 1em;
   opacity: 1;
   -webkit-clip-path: none;
