@@ -686,9 +686,9 @@ br + br {
  */
 @media screen and (min-width: 31.25em) {
   .container {
-    max-width: 31.25rem;
     margin: 0 auto;
     padding: 0 2.5rem;
+    max-width: 31.25rem;
   }
 }
 @media screen and (min-width: 37.5em) {
@@ -701,16 +701,16 @@ br + br {
     position: absolute;
     top: -2rem;
     right: 0;
+    z-index: -1;
     background: url("../svg/bg-pattern-1.svg") center center/cover no-repeat;
     width: 16.6875rem;
     height: 25rem;
-    z-index: -1;
   }
 }
 @media screen and (min-width: 80em) {
   .container {
-    max-width: 69.375rem;
     padding: 0;
+    max-width: 69.375rem;
   }
   .container::after {
     top: -2.5rem;
@@ -743,14 +743,14 @@ br + br {
 }
 @media screen and (min-width: 37.5em) {
   .hero {
-    font-size: 1.125rem;
     padding-top: 5.9375rem;
+    font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 80em) {
   .hero {
-    font-size: 1.25rem;
     padding-top: 2.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -772,8 +772,8 @@ br + br {
 }
 @media screen and (min-width: 37.5em) {
   .hero__title {
-    font-size: 4rem;
     line-height: 1;
+    font-size: 4rem;
   }
 }
 @media screen and (min-width: 80em) {
@@ -801,9 +801,9 @@ br + br {
 }
 @media screen and (min-width: 37.5em) {
   .hero__sub-section {
-    padding-top: 0;
     margin-top: 15.625rem;
     background-position: top center;
+    padding-top: 0;
     height: 37.5rem;
   }
 }
@@ -828,9 +828,9 @@ br + br {
   .hero__sub-section::after {
     top: -8.625rem;
     left: 4rem;
-    transform: translate(0);
     width: 16.875rem;
     height: 34.75rem;
+    transform: translate(0);
   }
 }
 @media screen and (min-width: 80em) {
@@ -867,10 +867,10 @@ br + br {
 }
 @media screen and (min-width: 80em) {
   .hero__card {
-    max-width: 27.875rem;
     top: 5.625rem;
     right: 5.9375rem;
     padding: 3.625rem 3.6875rem 3rem 3.375rem;
+    max-width: 27.875rem;
   }
 }
 
@@ -879,8 +879,8 @@ br + br {
 }
 @media screen and (min-width: 80em) {
   .hero__sub-title {
-    font-size: 2.5rem;
     margin-bottom: 1.375rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -980,8 +980,8 @@ br + br {
 @media screen and (min-width: 80em) {
   .footer__container {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
+    justify-content: space-between;
   }
 }
 
@@ -1002,8 +1002,8 @@ br + br {
 @media screen and (min-width: 37.5em) {
   .footer__flex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
 }
 

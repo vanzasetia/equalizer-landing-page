@@ -16,8 +16,8 @@ $-gap-between-social-media-icons: rem(20);
 .footer__container {
   @include breakpoint-up("small") {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
+    justify-content: space-between;
   }
 }
 
@@ -35,8 +35,8 @@ $-gap-between-social-media-icons: rem(20);
 .footer__flex {
   @include breakpoint-up("very-small") {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
