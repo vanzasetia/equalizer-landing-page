@@ -682,7 +682,7 @@ br + br {
 /**
  * 1. Make the bg-pattern-1 at the top right
  *    of the screen on 1440px, for the sake of
- *    similarity.
+ *    similarity with the design.
  */
 @media screen and (min-width: 31.25em) {
   .container {
@@ -714,10 +714,15 @@ br + br {
   }
   .container::after {
     top: -2.5rem;
-    right: -10.3125rem;
-    /* 1 */
+    right: -6.25rem;
     width: 19.5rem;
     height: 29.25rem;
+  }
+}
+@media screen and (min-width: 90em) {
+  .container::after {
+    right: -10.3125rem;
+    /* 1 */
   }
 }
 

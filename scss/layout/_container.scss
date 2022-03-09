@@ -43,9 +43,15 @@
 
     &::after {
       top: -#{rem(40)};
-      right: -#{rem(165)}; /* 1 */
+      right: -#{rem(100)};
       width: rem(312);
       height: rem(468);
+    }
+  }
+
+  @media screen and (min-width: 90em) {
+    &::after {
+      right: -#{rem(165)}; /* 1 */
     }
   }
 }
