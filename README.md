@@ -11,6 +11,16 @@
   <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fvanzasetia%2Fequalizer-landing-page&text=I%27ve%20just%20found%20@vanzasetia%27s%20solution%20for%20the%20Equalizer%20landing%20page%20challenge%21&hashtags=FrontendMentor%2CCodeChallenge" target="_blank"><img src="https://img.shields.io/badge/Twitter-Share-51c101?style=for-the-badge&logo=twitter&logoColor=white" alt="Share to Facebook"></a>
 </p>
 
+<p>
+  <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofficialequalizer.netlify.app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+    <img 
+      style="border:0;width:88px;height:31px"
+      src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+      alt="Valid CSS!"
+    />
+  </a>
+</p>
+
 # Equalizer Landing Page
 
 ## Table of contents
