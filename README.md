@@ -1,49 +1,25 @@
 ![banner](./images/banner.jpg)
 
-<p align="left">
-  <a href="https://www.frontendmentor.io/challenges?difficulties=1" target="_blank"><img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty"></a>
-  <img alt="Repo size" src="https://img.shields.io/github/repo-size/vanzasetia/equalizer-landing-page?style=for-the-badge&logo=github">
-  <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/vanzasetia/equalizer-landing-page?style=for-the-badge&logo=git">
-  <img alt="Netlify" src="https://img.shields.io/netlify/062391a0-6867-404a-ba7d-197497353a0e?style=for-the-badge&logo=netlify">
-  <img alt="License" src="https://img.shields.io/github/license/vanzasetia/equalizer-landing-page?color=green&style=for-the-badge&logo=github">
-  <a href="https://www.facebook.com/sharer?u=https%3A%2F%2Fgithub.com%2Fvanzasetia%2Fequalizer-landing-page" target="_blank"><img src="https://img.shields.io/badge/Facebook-Share-51c101?style=for-the-badge&logo=facebook&logoColor=white" alt="Share to Facebook"></a>
-  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fvanzasetia%2Fequalizer-landing-page&text=I%27ve%20just%20found%20@vanzasetia%27s%20solution%20for%20the%20Equalizer%20landing%20page%20challenge%21&hashtags=FrontendMentor%2CCodeChallenge" target="_blank"><img src="https://img.shields.io/badge/Twitter-Share-51c101?style=for-the-badge&logo=twitter&logoColor=white" alt="Share to Facebook"></a>
-</p>
-
-<p>
-  <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofficialequalizer.netlify.app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-    <img 
-      style="border:0;width:88px;height:31px"
-      src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-      alt="Valid CSS!"
-    />
-  </a>
-</p>
-
 # Equalizer Landing Page
 
-## Table of contents
-- [Overview](#overview)
-  - [Introduction](#introduction)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
-- [License](#license)
-- [References](#references)
+## Disclaimer
+
+This project is solely for learning purposes. I take no any responsibility or liability for the accuracy, completeness, or usefulness of any information provided in this project. You should not use it as a reference for creating your project.
+
+I am currently no longer working on this project.
 
 ## Overview
-[(Back to top)](#table-of-contents)
 
 ### Introduction
+
 Welcome to the `README.md` of this repo! The purpose of creating this project is to sharpen my coding skill.
 
 In this file I'm going to tell you everything, starting from tools that I used, and much more.
 
 That's it for the introduction and **happy reading!**
+
 ### The Challenge
+
 My challenge is to build out this landing page and get it looking as close to the design as possible.
 
 My users should be able to:
@@ -54,11 +30,11 @@ My users should be able to:
 - Understand and be able to navigate page content while using assistive technology
 
 ### Links
+
 - [Live Review](https://officialequalizer.netlify.app/)
 - [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/equalizer-landing-page-html-css-sass-0JTUm8wvt)
 
 ## My Process
-[(Back to top)](#table-of-contents)
 
 ### Built With
 - **Following best practices**\* 
@@ -72,28 +48,10 @@ My users should be able to:
 
 > \* I follow guidelines. [See what guidelines that I follow.](./docs/README.md#guidelines)
 
-## Author
-[(Back to top)](#table-of-contents)
-
-- Frontend Mentor - [@vanzasetia](https://frontendmentor.io/profile/vanzasetia)
-- Twitter - [@vanzasetia](https://twitter.com/vanzasetia)
-- Code Newbie - [@vanzasetia](https://community.codenewbie.org/vanzasetia)
-- Want to see me on other platform? [Check my linktree!](https://linktr.ee/vanzasetia)
-
 ## License
-[(Back to top)](#table-of-contents)
 
->You can check out [the full license](./LICENSE)
-
-This project is licensed under the terms of the MIT license.
-
-For those of you who are wondering, why do I need to license this? 
-- Well, first it's free. 😆
-- Second I checked this [Choose license website](https://choosealicense.com/) to help me chose a license.
-- The last reason, if I don't want to choose a license, then [here's what gonna happen](https://choosealicense.com/no-permission/).
+[MIT](./LICENSE)
 
 ## References
 
-[(Back to top)](#table-of-contents)
-
-> See the [documentation.](./docs/README.md)
+See the [documentation.](./docs/README.md)
